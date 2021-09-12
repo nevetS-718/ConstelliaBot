@@ -33,8 +33,8 @@ public class Config {
         ymlFile.addDefault("command.api.dog.key", "00000000-0000-0000-0000-000000000000");
         ymlFile.addDefault("command.api.fox.url", "https://randomfox.ca/floof/");
         ymlFile.addDefault("command.api.panda.url", "https://some-random-api.ml/img/panda");
-        ymlFile.addDefault("command.api.redpanda.url", "https://some-random-api.ml/img/red_panda");
-        ymlFile.addDefault("command.api.bird.url", "https://some-random-api.ml/img/birb");
+        //ymlFile.addDefault("command.api.redpanda.url", "https://some-random-api.ml/img/red_panda");
+        //ymlFile.addDefault("command.api.bird.url", "https://some-random-api.ml/img/birb");
         ymlFile.addDefault("verbose", false);
 
 

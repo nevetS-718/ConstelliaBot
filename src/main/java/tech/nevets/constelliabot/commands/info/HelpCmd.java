@@ -1,6 +1,7 @@
 package tech.nevets.constelliabot.commands.info;
 
 import net.dv8tion.jda.api.EmbedBuilder;
+import net.dv8tion.jda.api.entities.MessageEmbed;
 import net.dv8tion.jda.api.entities.TextChannel;
 import tech.nevets.constelliabot.Bot;
 import tech.nevets.constelliabot.commands.CommandContext;

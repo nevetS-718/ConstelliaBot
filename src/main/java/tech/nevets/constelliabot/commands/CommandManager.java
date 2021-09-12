@@ -1,12 +1,13 @@
 package tech.nevets.constelliabot.commands;
 
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
-import tech.nevets.constelliabot.Config;
+import tech.nevets.constelliabot.Bot;
 import tech.nevets.constelliabot.commands.debug.PingCmd;
 import tech.nevets.constelliabot.commands.games.CoinFlipCmd;
 import tech.nevets.constelliabot.commands.games.DadJokeCmd;
 import tech.nevets.constelliabot.commands.games.DiceCmd;
 import tech.nevets.constelliabot.commands.info.HelpCmd;
+import tech.nevets.constelliabot.commands.music.JoinCmd;
 import tech.nevets.constelliabot.commands.pictures.CatCmd;
 import tech.nevets.constelliabot.commands.pictures.DogCmd;
 import tech.nevets.constelliabot.commands.pictures.FoxCmd;
@@ -32,6 +33,7 @@ public class CommandManager {
         addCommand(new FoxCmd());
         addCommand(new GoodMorningCmd());
         addCommand(new HelpCmd(this));
+        //addCommand(new JoinCmd());
         addCommand(new PandaCmd());
         addCommand(new PingCmd());
     }
@@ -64,10 +66,8 @@ public class CommandManager {
     }
 
     public void handle(GuildMessageReceivedEvent event) {
-        String prefix = Config.getConfig().getString("bot.prefix");
-
         String[] split = event.getMessage().getContentRaw()
-                .replaceFirst("(?i)" + Pattern.quote(prefix), "")
+                .replaceFirst("(?i)" + Pattern.quote(Bot.prefix), "")
                 .split("\\s+");
 
         String invoke = split[0].toLowerCase();
