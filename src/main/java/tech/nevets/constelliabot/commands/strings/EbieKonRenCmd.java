@@ -6,7 +6,7 @@ import tech.nevets.constelliabot.commands.ICommand;
 
 import java.util.List;
 
-public class GoodMorningCmd implements ICommand {
+public class EbieKonRenCmd implements ICommand {
 
     @Override
     public void handle(CommandContext ctx) {
