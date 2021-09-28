@@ -13,6 +13,7 @@ import tech.nevets.constelliabot.commands.pictures.DogCmd;
 import tech.nevets.constelliabot.commands.pictures.FoxCmd;
 import tech.nevets.constelliabot.commands.pictures.PandaCmd;
 import tech.nevets.constelliabot.commands.strings.GoodMorningCmd;
+import tech.nevets.constelliabot.commands.strings.EbieKonRenCmd;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -30,6 +31,7 @@ public class CommandManager {
         addCommand(new DadJokeCmd());
         addCommand(new DiceCmd());
         addCommand(new DogCmd());
+        addCommand(new EbieKonRenCmd());
         addCommand(new FoxCmd());
         addCommand(new GoodMorningCmd());
         addCommand(new HelpCmd(this));
