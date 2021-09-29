@@ -15,6 +15,7 @@ import tech.nevets.constelliabot.commands.pictures.PandaCmd;
 import tech.nevets.constelliabot.commands.strings.GoodMorningCmd;
 import tech.nevets.constelliabot.commands.strings.EbieKonRenCmd;
 import tech.nevets.constelliabot.commands.strings.JangoTheSovietCmd;
+import tech.nevets.constelliabot.commands.strings.BlueSpruceCmd;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -27,6 +28,7 @@ public class CommandManager {
 
     public CommandManager() {
         //Add to this list in alphabetical order
+        addCommand(new BlueSpruceCmd());
         addCommand(new CatCmd());
         addCommand(new CoinFlipCmd());
         addCommand(new DadJokeCmd());
