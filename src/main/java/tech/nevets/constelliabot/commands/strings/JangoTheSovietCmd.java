@@ -7,7 +7,7 @@ import tech.nevets.constelliabot.commands.ICommand;
 import java.util.List;
 import java.util.Random;
 
-public class EbieKonRenCmd implements ICommand {
+public class JangoTheSovietCmd implements ICommand {
 
     @Override
     public void handle(CommandContext ctx) {
@@ -17,28 +17,26 @@ public class EbieKonRenCmd implements ICommand {
         int i = r.nextInt(max);
         if (i == 0) {
             ctx.getChannel().sendTyping().queue();
-            ctx.getChannel().sendMessage("*proceeds to run every command the bot has*").queue();
-            ctx.getChannel().sendMessage("-EbieKonRen").queue();
+            ctx.getChannel().sendMessage("JOIN THE CSE!").queue();
         } else {
             ctx.getChannel().sendTyping().queue();
-            ctx.getChannel().sendMessage("Hmm I wonder what this command does?").queue();
-            ctx.getChannel().sendMessage("-EbieKonRen").queue();
+            ctx.getChannel().sendMessage("Praise be it thy Spruce").queue();
         }
     }
 
     @Override
     public String getName() {
-        return "ebiekonren";
+        return "jangothesoviet";
     }
 
     @Override
     public String getHelp() {
         return "Sends a good morning message\n" +
-                "Usage: `" + Bot.prefix + "ebiekonren`";
+                "Usage: `" + Bot.prefix + "jangothesoviet`";
     }
 
     @Override
     public List<String> getAliases() {
-        return List.of("cmd", "ebie", "everycommand");
+        return List.of("jango", "cse", "spruce");
     }
 }

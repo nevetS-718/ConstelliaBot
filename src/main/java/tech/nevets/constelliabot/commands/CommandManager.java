@@ -14,6 +14,7 @@ import tech.nevets.constelliabot.commands.pictures.FoxCmd;
 import tech.nevets.constelliabot.commands.pictures.PandaCmd;
 import tech.nevets.constelliabot.commands.strings.GoodMorningCmd;
 import tech.nevets.constelliabot.commands.strings.EbieKonRenCmd;
+import tech.nevets.constelliabot.commands.strings.JangoTheSovietCmd;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -35,6 +36,7 @@ public class CommandManager {
         addCommand(new FoxCmd());
         addCommand(new GoodMorningCmd());
         addCommand(new HelpCmd(this));
+        addCommand(new JangoTheSovietCmd());
         //addCommand(new JoinCmd());
         addCommand(new PandaCmd());
         addCommand(new PingCmd());
