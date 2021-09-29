@@ -11,17 +11,8 @@ public class JangoTheSovietCmd implements ICommand {
 
     @Override
     public void handle(CommandContext ctx) {
-        Random r = new Random();
-        int max = 2;
-
-        int i = r.nextInt(max);
-        if (i == 0) {
-            ctx.getChannel().sendTyping().queue();
-            ctx.getChannel().sendMessage("JOIN THE CSE!").queue();
-        } else {
-            ctx.getChannel().sendTyping().queue();
-            ctx.getChannel().sendMessage("Praise be it thy Spruce").queue();
-        }
+        ctx.getChannel().sendTyping().queue();
+        ctx.getChannel().sendMessage("JOIN THE CSE!").queue();
     }
 
     @Override
