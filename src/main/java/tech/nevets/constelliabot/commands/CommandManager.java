@@ -12,10 +12,7 @@ import tech.nevets.constelliabot.commands.pictures.CatCmd;
 import tech.nevets.constelliabot.commands.pictures.DogCmd;
 import tech.nevets.constelliabot.commands.pictures.FoxCmd;
 import tech.nevets.constelliabot.commands.pictures.PandaCmd;
-import tech.nevets.constelliabot.commands.strings.GoodMorningCmd;
-import tech.nevets.constelliabot.commands.strings.EbieKonRenCmd;
-import tech.nevets.constelliabot.commands.strings.JangoTheSovietCmd;
-import tech.nevets.constelliabot.commands.strings.BlueSpruceCmd;
+import tech.nevets.constelliabot.commands.strings.*;
 
 import javax.annotation.Nullable;
 import java.util.ArrayList;
@@ -42,6 +39,7 @@ public class CommandManager {
         //addCommand(new JoinCmd());
         addCommand(new PandaCmd());
         addCommand(new PingCmd());
+        addCommand(new SpooktoberCmd());
     }
 
     private void addCommand(ICommand cmd) {
