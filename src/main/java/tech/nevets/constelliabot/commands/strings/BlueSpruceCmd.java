@@ -11,8 +11,17 @@ public class BlueSpruceCmd implements ICommand {
 
     @Override
     public void handle(CommandContext ctx) {
-        ctx.getChannel().sendTyping().queue();
-        ctx.getChannel().sendMessage("Praise be it thy Spruce").queue();
+        Random r = new Random();
+        int max = 2;
+
+        int i = r.nextInt(max);
+        if (i == 0) {
+            ctx.getChannel().sendTyping().queue();
+            ctx.getChannel().sendMessage("Praise be it thy Spruce").queue();
+        } else {
+            ctx.getChannel().sendTyping().queue();
+            ctx.getChannel().sendMessage("*sends another picture of a new Kumbucha brand that nobody has ever heard of before*").queue();
+        }
     }
 
     @Override

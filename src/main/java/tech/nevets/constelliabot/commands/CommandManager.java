@@ -3,15 +3,10 @@ package tech.nevets.constelliabot.commands;
 import net.dv8tion.jda.api.events.message.guild.GuildMessageReceivedEvent;
 import tech.nevets.constelliabot.Bot;
 import tech.nevets.constelliabot.commands.debug.PingCmd;
-import tech.nevets.constelliabot.commands.games.CoinFlipCmd;
-import tech.nevets.constelliabot.commands.games.DadJokeCmd;
-import tech.nevets.constelliabot.commands.games.DiceCmd;
+import tech.nevets.constelliabot.commands.games.*;
 import tech.nevets.constelliabot.commands.info.HelpCmd;
 import tech.nevets.constelliabot.commands.music.JoinCmd;
-import tech.nevets.constelliabot.commands.pictures.CatCmd;
-import tech.nevets.constelliabot.commands.pictures.DogCmd;
-import tech.nevets.constelliabot.commands.pictures.FoxCmd;
-import tech.nevets.constelliabot.commands.pictures.PandaCmd;
+import tech.nevets.constelliabot.commands.pictures.*;
 import tech.nevets.constelliabot.commands.strings.*;
 
 import javax.annotation.Nullable;
