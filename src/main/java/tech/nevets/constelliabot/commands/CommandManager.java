@@ -31,6 +31,7 @@ public class CommandManager {
         addCommand(new GoodMorningCmd());
         addCommand(new HelpCmd(this));
         addCommand(new JangoTheSovietCmd());
+        addCommand(new LanguageCmd());
         //addCommand(new JoinCmd());
         addCommand(new PandaCmd());
         addCommand(new PingCmd());
