@@ -26,7 +26,7 @@ public class PandaRequest {
                 .join();
     }
 
-    public static String parse(String response) {
+    public static void parse(String response) {
         String mod = "[ " + response + " ]";
         JSONArray ja = new JSONArray(mod);
 
@@ -34,7 +34,5 @@ public class PandaRequest {
             JSONObject jo = ja.getJSONObject(i);
             url = jo.getString("link");
         }
-
-        return null;
     }
 }
